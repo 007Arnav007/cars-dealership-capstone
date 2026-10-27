@@ -1,0 +1,13 @@
+services:
+  mongo_db:
+    image: mongo:7
+    ports: ["27017:27017"]
+  dealers_api:
+    build: ./database
+    environment:
+      MONGO_URL: mongodb://mongo_db:27017/
+    ports: ["3030:3030"]
+    depends_on: [mongo_db]
+  sentiment_analyzer:
+    build: ./sentiment_analyzer
+    ports: ["5050:5000"]

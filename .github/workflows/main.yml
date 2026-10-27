@@ -1,0 +1,60 @@
+name: CI - Lint and Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint_python:
+    name: Lint Python (flake8)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install flake8
+        run: pip install flake8
+      - name: Run flake8
+        run: flake8 server sentiment_analyzer --exclude=migrations,node_modules,frontend --count --select=E9,F63,F7,F82 --show-source --statistics
+
+  lint_js:
+    name: Lint JavaScript (JSHint)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Install JSHint
+        run: npm install -g jshint
+      - name: Run JSHint
+        run: jshint database/app.js
+
+  django_check:
+    name: Django system check and frontend build
+    runs-on: ubuntu-latest
+    needs: [lint_python, lint_js]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python dependencies
+        run: pip install -r server/requirements.txt
+      - name: Django check
+        run: cd server && python manage.py check
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Build React frontend
+        run: cd server/frontend && npm install && npm run build

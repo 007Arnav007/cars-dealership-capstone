@@ -1,0 +1,40 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 27, 2026 - 21:48:19
+Django version 5.1.15, using settings 'djangoproj.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[27/Oct/2026 21:48:25] "POST /djangoapp/login HTTP/1.1" 200 47
+[27/Oct/2026 21:48:25] "GET /djangoapp/logout HTTP/1.1" 200 16
+Network exception occurred: HTTPConnectionPool(host='localhost', port=3030): Max retries exceeded with url: /fetchReviews/dealer/29 (Caused by NewConnectionError("HTTPConnection(host='localhost', port=3030): Failed to establish a new connection: [Errno 111] Connection refused"))
+[27/Oct/2026 21:48:25] "GET /djangoapp/reviews/dealer/29 HTTP/1.1" 200 30
+Network exception occurred: HTTPConnectionPool(host='localhost', port=3030): Max retries exceeded with url: /fetchDealers (Caused by NewConnectionError("HTTPConnection(host='localhost', port=3030): Failed to establish a new connection: [Errno 111] Connection refused"))
+[27/Oct/2026 21:48:25] "GET /djangoapp/get_dealers HTTP/1.1" 200 32
+Network exception occurred: HTTPConnectionPool(host='localhost', port=3030): Max retries exceeded with url: /fetchDealer/15 (Caused by NewConnectionError("HTTPConnection(host='localhost', port=3030): Failed to establish a new connection: [Errno 111] Connection refused"))
+[27/Oct/2026 21:48:25] "GET /djangoapp/dealer/15 HTTP/1.1" 200 31
+Network exception occurred: HTTPConnectionPool(host='localhost', port=3030): Max retries exceeded with url: /fetchDealers/Kansas (Caused by NewConnectionError("HTTPConnection(host='localhost', port=3030): Failed to establish a new connection: [Errno 111] Connection refused"))
+[27/Oct/2026 21:48:25] "GET /djangoapp/get_dealers/Kansas HTTP/1.1" 200 32
+[27/Oct/2026 21:48:25] "GET /djangoapp/get_cars HTTP/1.1" 200 1093
+[27/Oct/2026 21:48:33] "GET /djangoapp/get_dealers/Kansas HTTP/1.1" 200 2679
+Unexpected err=ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'localhost\', port=5050): Max retries exceeded with url: /analyze/Fantastic%20service%20and%20a%20very%20friendly%20sales%20team! (Caused by NewConnectionError("HTTPConnection(host=\'localhost\', port=5050): Failed to establish a new connection: [Errno 111] Connection refused"))')), type(err)=<class 'requests.exceptions.ConnectionError'>
+Unexpected err=ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'localhost\', port=5050): Max retries exceeded with url: /analyze/Excellent%20prices%20and%20a%20wonderful%20staff.%20Highly%20recommend. (Caused by NewConnectionError("HTTPConnection(host=\'localhost\', port=5050): Failed to establish a new connection: [Errno 111] Connection refused"))')), type(err)=<class 'requests.exceptions.ConnectionError'>
+[27/Oct/2026 21:48:33] "GET /djangoapp/reviews/dealer/29 HTTP/1.1" 200 539
+[27/Oct/2026 21:48:33] "GET / HTTP/1.1" 200 434
+[27/Oct/2026 21:48:33] "GET /about/ HTTP/1.1" 200 3468
+[27/Oct/2026 21:48:33] "GET /contact/ HTTP/1.1" 200 2533
+[27/Oct/2026 21:48:33] "GET /dealers/ HTTP/1.1" 200 434
+[27/Oct/2026 21:48:33] "GET /dealer/3 HTTP/1.1" 200 434
+[27/Oct/2026 21:48:33] "GET /postreview/3 HTTP/1.1" 200 434
+[27/Oct/2026 21:48:33] "GET /about/ HTTP/1.1" 200 3468
+[27/Oct/2026 21:48:33] "GET / HTTP/1.1" 200 434
+[27/Oct/2026 21:48:33] "POST /djangoapp/login HTTP/1.1" 200 47
+[27/Oct/2026 21:48:33] "POST /djangoapp/add_review HTTP/1.1" 200 15
+Unexpected err=ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'localhost\', port=5050): Max retries exceeded with url: /analyze/It%20was%20okay.%20Prices%20were%20fair,%20service%20was%20average. (Caused by NewConnectionError("HTTPConnection(host=\'localhost\', port=5050): Failed to establish a new connection: [Errno 111] Connection refused"))')), type(err)=<class 'requests.exceptions.ConnectionError'>
+Unexpected err=ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'localhost\', port=5050): Max retries exceeded with url: /analyze/Loved%20the%20test%20drive,%20the%20staff%20was%20patient%20and%20helpful. (Caused by NewConnectionError("HTTPConnection(host=\'localhost\', port=5050): Failed to establish a new connection: [Errno 111] Connection refused"))')), type(err)=<class 'requests.exceptions.ConnectionError'>
+Unexpected err=ConnectionError(MaxRetryError('HTTPConnectionPool(host=\'localhost\', port=5050): Max retries exceeded with url: /analyze/Great%20dealership! (Caused by NewConnectionError("HTTPConnection(host=\'localhost\', port=5050): Failed to establish a new connection: [Errno 111] Connection refused"))')), type(err)=<class 'requests.exceptions.ConnectionError'>
+[27/Oct/2026 21:48:33] "GET /djangoapp/reviews/dealer/3 HTTP/1.1" 200 752
+[27/Oct/2026 21:48:33] "GET / HTTP/1.1" 200 434
+[27/Oct/2026 21:48:33] "GET /static/js/main.2b7f3e7c.js HTTP/1.1" 200 170663
+[27/Oct/2026 21:48:42] "GET /djangoapp/reviews/dealer/29 HTTP/1.1" 200 541

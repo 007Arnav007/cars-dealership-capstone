@@ -1,0 +1,6 @@
+body { background: #f6f7f9; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.hero { background: #1f2933; color: #fff; padding: 48px 0; }
+.team-card img { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 4px solid #e4e7eb; }
+.team-card { text-align: center; background: #fff; border: 1px solid #dde1e6; border-radius: 8px; padding: 24px; height: 100%; }
+.contact-card { background: #fff; border: 1px solid #dde1e6; border-radius: 8px; padding: 24px; height: 100%; }
+.banner { width: 100%; max-height: 280px; object-fit: cover; border-radius: 8px; }

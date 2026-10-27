@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dealership
+  labels: { app: dealership }
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: dealership }
+  template:
+    metadata:
+      labels: { app: dealership }
+    spec:
+      containers:
+        - name: dealership
+          image: docker.io/YOUR_DOCKERHUB_USER/dealership:latest
+          imagePullPolicy: Always
+          ports: [{ containerPort: 8000 }]
+          env:
+            - { name: backend_url, value: "https://YOUR-DEALERS-API-URL" }
+            - { name: sentiment_analyzer_url, value: "https://YOUR-SENTIMENT-URL/" }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dealership
+spec:
+  type: NodePort
+  selector: { app: dealership }
+  ports: [{ port: 8000, targetPort: 8000 }]

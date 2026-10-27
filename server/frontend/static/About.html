@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Cars Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Cars Dealership</a>
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link active fw-bold" href="/about/">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contact/">Contact Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="/login/">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="/register/">Register</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>About Us</h1>
+    <p class="lead mb-0">Cars Dealership is a national car retailer with branches in 25 U.S. cities. We make it easy to find a dealer near you and to read honest reviews from real customers.</p>
+  </div>
+</header>
+
+<main class="container my-5">
+  <h2 class="mb-4">Meet our leadership team</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Olivia Bennett">
+        <h5 class="mt-3 mb-0">Olivia Bennett</h5>
+        <p class="text-muted">Chief Executive Officer</p>
+        <p>Leads company strategy and has grown the dealership network from 5 to 50 branches over 15 years.</p>
+        <a href="mailto:olivia.bennett@carsdealership.com">olivia.bennett@carsdealership.com</a>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus Hill">
+        <h5 class="mt-3 mb-0">Marcus Hill</h5>
+        <p class="text-muted">Head of Sales</p>
+        <p>Oversees the national sales team and customer financing programs for new and pre-owned vehicles.</p>
+        <a href="mailto:marcus.hill@carsdealership.com">marcus.hill@carsdealership.com</a>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Nair">
+        <h5 class="mt-3 mb-0">Priya Nair</h5>
+        <p class="text-muted">Customer Experience Manager</p>
+        <p>Manages dealer reviews and sentiment analysis so every customer concern gets a quick response.</p>
+        <a href="mailto:priya.nair@carsdealership.com">priya.nair@carsdealership.com</a>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Daniel Ortiz">
+        <h5 class="mt-3 mb-0">Daniel Ortiz</h5>
+        <p class="text-muted">Lead Software Engineer</p>
+        <p>Builds and maintains the dealership web platform, including the Django, React and microservice stack.</p>
+        <a href="mailto:daniel.ortiz@carsdealership.com">daniel.ortiz@carsdealership.com</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-dark text-white-50 text-center py-3">&copy; 2026 Cars Dealership</footer>
+</body>
+</html>

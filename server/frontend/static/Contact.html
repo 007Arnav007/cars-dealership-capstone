@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Cars Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Cars Dealership</a>
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/about/">About Us</a></li>
+      <li class="nav-item"><a class="nav-link active fw-bold" href="/contact/">Contact Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="/login/">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="/register/">Register</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="lead mb-0">Questions about a vehicle, a dealer or a review? Our team replies within one business day.</p>
+  </div>
+</header>
+
+<main class="container my-5">
+  <img class="banner mb-4" src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1400&q=70" alt="Cars Dealership head office building">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="contact-card">
+        <h5>Head Office</h5>
+        <p class="mb-1">1200 Market Street, Suite 400</p>
+        <p class="mb-1">Topeka, Kansas 66612</p>
+        <p class="mb-0">United States</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contact-card">
+        <h5>Phone &amp; Email</h5>
+        <p class="mb-1">Phone: <a href="tel:+17855550142">+1 (785) 555-0142</a></p>
+        <p class="mb-1">Support: <a href="mailto:support@carsdealership.com">support@carsdealership.com</a></p>
+        <p class="mb-0">Sales: <a href="mailto:sales@carsdealership.com">sales@carsdealership.com</a></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="contact-card">
+        <h5>Opening Hours</h5>
+        <p class="mb-1">Monday - Friday: 9:00 AM - 7:00 PM</p>
+        <p class="mb-1">Saturday: 10:00 AM - 5:00 PM</p>
+        <p class="mb-0">Sunday: Closed</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-dark text-white-50 text-center py-3">&copy; 2026 Cars Dealership</footer>
+</body>
+</html>
