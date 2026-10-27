@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cars Dealership – Full-Stack Developer Capstone
 
 **Project name:** Cars Dealership – Full-Stack Web Application
@@ -30,3 +31,6 @@ Admin: http://localhost:8000/admin — user `root` / password `Root@12345` (chan
 
 `/djangoapp/login` · `/djangoapp/logout` · `/djangoapp/register` · `/djangoapp/get_cars` ·
 `/djangoapp/get_dealers[/<state>]` · `/djangoapp/dealer/<id>` · `/djangoapp/reviews/dealer/<id>` · `/djangoapp/add_review`
+=======
+# cars-dealership-capstone
+>>>>>>> 013ef8b9d27f51e35391d2a13df0d202d9466717
