@@ -1,3 +1,3 @@
 $ curl -s http://localhost:8000/djangoapp/reviews/dealer/29
 
-{"status": 200, "reviews": []}
+{"status": 200, "reviews": [{"id": 57, "name": "Taylor Brooks", "dealership": 29, "review": "Fantastic service and a very friendly sales team!", "purchase": true, "purchase_date": "07/27/2022", "car_make": "Toyota", "car_model": "Camry", "car_year": 2023, "sentiment": "positive"}, {"id": 58, "name": "Sam Rivera", "dealership": 29, "review": "Excellent prices and a wonderful staff. Highly recommend.", "purchase": true, "purchase_date": "05/01/2022", "car_make": "Toyota", "car_model": "Camry", "car_year": 2016, "sentiment": "positive"}]}
