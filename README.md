@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 # Cars Dealership – Full-Stack Developer Capstone
 
 **Project name:** Cars Dealership – Full-Stack Web Application
-**Author:** YOUR NAME HERE  &nbsp;|&nbsp; **Course:** IBM Full-Stack Application Development Capstone
+**Author:** Arnav Gharpure  &nbsp;|&nbsp; **Course:** IBM Full-Stack Application Development Capstone
 
 A responsive web application for a national U.S. car retailer where users can browse dealership branches,
 filter them by state, read reviews (with sentiment analysis) and post their own reviews.
