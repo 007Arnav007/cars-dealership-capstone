@@ -1,7 +1,7 @@
+﻿
+# Cars Dealership â€“ Full-Stack Developer Capstone
 
-# Cars Dealership – Full-Stack Developer Capstone
-
-**Project name:** Cars Dealership – Full-Stack Web Application
+**Project name:** Cars Dealership â€“ Full-Stack Web Application
 **Author:** Arnav Gharpure  &nbsp;|&nbsp; **Course:** IBM Full-Stack Application Development Capstone
 
 A responsive web application for a national U.S. car retailer where users can browse dealership branches,
@@ -14,8 +14,8 @@ filter them by state, read reviews (with sentiment analysis) and post their own 
 | Web app + REST proxy | Django 4/5, SQLite, React 18 (Bootstrap 5) | 8000 |
 | Dealers & reviews service | Node.js, Express, MongoDB (Mongoose) | 3030 |
 | Sentiment analyzer | Flask + VADER | 5050 (local) / 5000 (container) |
-| CI | GitHub Actions (flake8, JSHint, Django check, React build) | – |
-| Deployment | Docker, Kubernetes (`server/deployment.yaml`), IBM Cloud Code Engine | – |
+| CI | GitHub Actions (flake8, JSHint, Django check, React build) | â€“ |
+| Deployment | Docker, Kubernetes (`server/deployment.yaml`), IBM Cloud Code Engine | â€“ |
 
 ## Run locally
 
@@ -25,12 +25,12 @@ docker compose up -d --build       # MongoDB + dealers API (3030) + sentiment an
 cd server && ./venv/bin/python manage.py runserver   # http://localhost:8000
 ```
 
-Admin: http://localhost:8000/admin — user `root` / password `Root@12345` (change it for real use).
+Admin: http://localhost:8000/admin â€” user `root` / password `Root@12345` (change it for real use).
 
 ## Main endpoints (Django)
 
-`/djangoapp/login` · `/djangoapp/logout` · `/djangoapp/register` · `/djangoapp/get_cars` ·
-`/djangoapp/get_dealers[/<state>]` · `/djangoapp/dealer/<id>` · `/djangoapp/reviews/dealer/<id>` · `/djangoapp/add_review`
+`/djangoapp/login` Â· `/djangoapp/logout` Â· `/djangoapp/register` Â· `/djangoapp/get_cars` Â·
+`/djangoapp/get_dealers[/<state>]` Â· `/djangoapp/dealer/<id>` Â· `/djangoapp/reviews/dealer/<id>` Â· `/djangoapp/add_review`
 =======
 # cars-dealership-capstone
 >>>>>>> 013ef8b9d27f51e35391d2a13df0d202d9466717
